@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: blueviolet;
+}
+.ticket {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.textarea {
+	margin-top: 30px;
+}
+
+.place-number-input,
+.btn-add,
+.textarea {
+	height: 70px;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+.place-number-input,
+.btn-add {
+	background-color: rgb(255, 0, 255);
+}
+.place-number-input {
+	width: 300px;
+}
+.place-number-input::-webkit-outer-spin-button,
+.place-number-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.btn-add {
+	width: 100px;
+}
