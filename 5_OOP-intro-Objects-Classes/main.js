@@ -130,7 +130,7 @@ console.log('Current course: ' + stud1.showCourse())
 // - метод друку (метод приймає рядок і виводить текст відповідним кольором;
 // текст виводиться до тих пір, поки в маркері є чорнило; один не пробіловий символ – це 0,5% чорнила в маркері).
 // В. Реалізувати клас, що описує маркер, що заправляється, успадкувавши його від простого маркера і додавши метод для заправки маркера. Продемонструвати роботу написаних методів
-
+const minInk = 0.5
 class Marker {
 	constructor(color, ink) {
 		this.color = color
@@ -141,9 +141,9 @@ class Marker {
 		let printedText = ''
 		for (let i = 0; i < text.length; i++) {
 			if (text[i] !== ' ') {
-				if (inkLevel >= 0.5) {
+				if (inkLevel >= minInk) {
 					printedText += text[i]
-					inkLevel -= 0.5
+					inkLevel -= minInk
 				} else {
 					console.log('The marker is out of ink!')
 				}
