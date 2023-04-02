@@ -1,0 +1,14 @@
+.active {
+	color: orange;
+	font-size: 20px;
+	font-family: 'Comic Sans MS';
+}
+.button {
+	cursor: pointer;
+}
+.change-txt {
+	text-decoration: none;
+}
+.width, .height {
+    display: inline-block;
+}
