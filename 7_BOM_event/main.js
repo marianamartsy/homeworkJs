@@ -8,16 +8,16 @@
 //         3) із затримкою 2 сек перемістіть вікно в точку з координатами (200, 200)
 //         4) із затримкою 2 сек закрийте вікно.
 
-// var newWindow = window.open('http://127.0.0.1:5500/7_BOM_event/index.html', 'newWindow', 'width=300, height=300')
-// setTimeout(function () {
-// 	newWindow.resizeTo(500, 500)
-// 	setTimeout(function () {
-// 		newWindow.moveTo(200, 200)
-// 		setTimeout(function () {
-// 			newWindow.close()
-// 		}, 2000)
-// 	}, 2000)
-// }, 2000)
+ var newWindow = window.open('http://127.0.0.1:5500/7_BOM_event/index.html', 'newWindow', 'width=300, height=300')
+ setTimeout(function () {
+	newWindow.resizeTo(500, 500)
+ 	setTimeout(function () {
+ 		newWindow.moveTo(200, 200)
+		setTimeout(function () {
+ 			newWindow.close()
+ 		}, 2000)
+	}, 2000)
+}, 2000)
 
 // 7-2.
 // Для заданої HTML-сторінки:
