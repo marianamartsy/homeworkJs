@@ -89,7 +89,7 @@ console.log(checkEmail('my_ma-il@gmail.com'))
 // //1, 1, 3
 
 function checkLogin(login) {
-	const regex = /^[a-zA-Z][a-zA-Z0-9.]{1,9}$/
+	const regex = /^[a-zA-Z][a-zA-Z0-9\.]{1,9}$/
 	return regex.test(login)
 }
 
